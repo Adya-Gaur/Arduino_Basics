@@ -35,7 +35,7 @@ My approach was **sequential learning** — mastering each concept individually 
 - Practiced modular programming, multi-component debugging, and sequencing logic.  
 - Mini projects: Auto Light System, Smart Park Sensor, Button-Controlled Car, Optional Fire Alarm System.
 
-### **Miscellaneous Projects 🔧**
+### **Stage F: Miscellaneous Projects 🔧**
 - Explored additional concepts for further learning and practice:  
   - Buzzer melodies (tone function)  
   - Data display on Serial Monitor  
