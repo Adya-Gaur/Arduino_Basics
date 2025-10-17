@@ -19,9 +19,9 @@ These projects allowed me to experiment with sound, data monitoring, and real-ti
 - Reinforcing modular coding and sequential logic  
 
 ## 🧩 Projects in this Stage
-1. **Buzzer_Melody.ino** – Create simple tunes using the Arduino buzzer.  
-2. **Temperature_Display.ino** – Measure ambient temperature and display it on the Serial Monitor.  
-3. **Data_Display_Serial.ino** – Read analog sensor data and print real-time values to the Serial Monitor for observation and analysis.  
+1. **Buzzer_Melody.ino** – Create simple tunes using the Arduino buzzer.  [YouTube Demo](https://www.youtube.com)
+2. **Temperature_Display.ino** – Measure ambient temperature and display it on the Serial Monitor.  [YouTube Demo](https://www.youtube.com)
+3. **Data_Display_Serial.ino** – Read analog sensor data and print real-time values to the Serial Monitor for observation and analysis.  [YouTube Demo](https://www.youtube.com)
 
 ## 🔍 Observations / Notes
 - Learned that sound output requires careful timing to produce melodies accurately.  
