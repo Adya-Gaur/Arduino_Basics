@@ -1,0 +1,1 @@
+//Analog input scaling
