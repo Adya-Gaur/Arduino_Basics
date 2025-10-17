@@ -23,10 +23,10 @@ This stage focuses on DC motors, servo motors, and motor drivers, learning how t
 - Basics of motor direction control (clockwise & anticlockwise rotation)  
 
 ## 🧩 Projects in this Stage
-1. **DC_Motor_Control.ino** – Control a single DC motor using digital pins for direction.  
-2. **PWM_SpeedControl.ino** – Use PWM to vary DC motor speed smoothly.  
-3. **Servo_Control.ino** – Rotate a servo motor to specific angles using the Servo library.  
-4. **Dual_Motor_Test.ino** – Test two motors using L293D for bidirectional control.  
+1. **DC_Motor_Control.ino** – Control a single DC motor using digital pins for direction.  [YouTube Demo](https://www.youtube.com) 
+2. **PWM_SpeedControl.ino** – Use PWM to vary DC motor speed smoothly.   [YouTube Demo](https://www.youtube.com)
+3. **Servo_Control.ino** – Rotate a servo motor to specific angles using the Servo library.   [YouTube Demo](https://www.youtube.com)
+4. **Dual_Motor_Test.ino** – Test two motors using L293D for bidirectional control.   [YouTube Demo](https://www.youtube.com)
 
 ## 🔍 Observations / Notes
 - Learned that motors need more current than Arduino pins can provide directly.  
