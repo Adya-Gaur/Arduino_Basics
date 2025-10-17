@@ -23,9 +23,9 @@ The goal is to understand how digital inputs work, how to handle button presses 
 - Understanding and handling switch bounce (debouncing)  
 
 ## 🧩 Projects in this Stage
-1. **Button_Control_LED.ino** – Pressing a button turns the LED ON; releasing turns it OFF.  
-2. **Toggle_LED_Button.ino** – Each button press toggles the LED state (ON/OFF).  
-3. **Multiple_Buttons.ino** – Two buttons control separate LEDs or functions independently.  
+1. **Button_Control_LED.ino** – Pressing a button turns the LED ON; releasing turns it OFF.   [YouTube Demo](https://www.youtube.com)
+2. **Toggle_LED_Button.ino** – Each button press toggles the LED state (ON/OFF).   [YouTube Demo](https://www.youtube.com)
+3. **Multiple_Buttons.ino** – Two buttons control separate LEDs or functions independently.   [YouTube Demo](https://www.youtube.com)
 
 ## 🔍 Observations / Notes
 - Learned that input pins can float and give random readings without resistors.  
