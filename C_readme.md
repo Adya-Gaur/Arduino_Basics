@@ -23,9 +23,9 @@ You’ll learn how analog and digital sensors work, how to read their data, and 
 - Using simple mathematical conversions (e.g., voltage to temperature)  
 
 ## 🧩 Projects in this Stage
-1. **LDR_LightSensor.ino** – Measure light intensity and control LED brightness accordingly.  
-2. **Distance_Sensor.ino** – Use ultrasonic sensor to detect obstacles and print distance in cm.  
-3. **Temperature_Sensor.ino** – Measure ambient temperature and display readings on Serial Monitor.  
+1. **LDR_LightSensor.ino** – Measure light intensity and control LED brightness accordingly.   [YouTube Demo](https://www.youtube.com)
+2. **Distance_Sensor.ino** – Use ultrasonic sensor to detect obstacles and print distance in cm.   [YouTube Demo](https://www.youtube.com)
+3. **Temperature_Sensor.ino** – Measure ambient temperature and display readings on Serial Monitor.   [YouTube Demo](https://www.youtube.com)
 
 ## 🔍 Observations / Notes
 - Learned how sensors convert physical quantities into electrical signals.  
