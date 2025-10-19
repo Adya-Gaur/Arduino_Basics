@@ -1,1 +1,1 @@
-//Two buttons: one for ON, one for OFF. Practise multiple input handling
+/*Two Button control. Each button is a digital input - HIGH when pressed */
