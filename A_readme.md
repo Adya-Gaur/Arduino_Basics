@@ -21,6 +21,7 @@ This stage focuses on understanding how Arduino sends output signals through LED
 - RGB color control using three PWM pins  
 - Current limiting and safe LED connection using resistors
 - Blending of colours using loops with loop variable varying from 1 to 255
+- Defining functions to avoid rewiting the same code multiple times
 
 ## 🧩 Projects in this Stage
 1. **LED_Patterns.ino** – Multiple LEDs blink in a sequential pattern. 
