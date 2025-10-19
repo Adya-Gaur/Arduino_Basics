@@ -4,15 +4,15 @@
 int redPin = 9, greenPin = 10, bluePin = 11;
 int brightnessPin1 = 3, colourPin2 = 5;
 int lastButton2State = LOW, lastButton1State = LOW, button1State, buttonState2;
-int briVal = 1, colour = 1, bri;
+int briVal = 0, colour = 1, bri;
 
 void setup()
 {
   pinMode(redPin, OUTPUT);
   pinMode(greenPin, OUTPUT);
   pinMode(bluePin, OUTPUT);
-  pinMode(brightnessPin, INPUT);
-  pinMode(brightness, INPUT);
+  pinMode(brightnessPin1, INPUT);
+  pinMode(colourPin2, INPUT);
 }
 
 void colourOutput(int redVal, int greenVal, int blueVal) //Custom function to avoid writing analogWrite() statements again and again
@@ -36,11 +36,11 @@ void LEDcolour(int colourVal, int brightness) //Custom function for making diffe
     colourOutput(brightness, 0, brightness); //Magenta
   else if (colourVal == 6)
     colourOutput(brightness, 0, 0); //Red
-  else 
+  else if (colourVal == 7)
     colourOutput(brightness, brightness, brightness); //White 
 }
 
-void LEDbrighness(int brightnessVal)
+void LEDbrightess(int brightnessVal)
 {
   if (brightnessVal == 1)
     bri = 85;
@@ -48,7 +48,7 @@ void LEDbrighness(int brightnessVal)
     bri = 170;
   else if (brightnessVal == 3)
     bri = 255;
-  else 
+  else if (brightnessVal == 0)
     bri = 0;
   return bri;
 }
@@ -57,33 +57,28 @@ void loop()
 {
   button1State = digitalRead(brightnessPin1);
   button2State = digitalRead(colourPin2);
+  bri = LEDbrightness(briVal);
 
-  if(button1State == HIGH && lastButton2State == LOW)
+  if(button1State == HIGH && lastButton1State == LOW)
   {
     briVal = briVal++;
-    bri = LEDbrightness(briVal);
-    lastButton2State = button2State;
-    if (bri == 3)
-      bri = bri-3;
+    lastButton1State = button1State;
     delay(100);
   }
-  
   if (button2State == HIGH && lastButton2State == LOW)
   {
-    LEDcolour(colour, bri)
     colour = colour++;
-    lastButton2state = buttonState
-    if (colour == 6)
-      colour-= 6;
+    lastButton2state = button2State;
     delay(100);
   }
+
+  LEDcolour(colour, bri);
+  
+  if (colour == 7)
+    colour -= 7;
+  if (briVal == 3)
+    briVal -= 3;
 }
-
-
-
-
-
-
 
 
 
