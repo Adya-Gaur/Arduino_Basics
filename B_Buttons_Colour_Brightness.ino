@@ -57,7 +57,6 @@ void loop()
 {
   button1State = digitalRead(brightnessPin1);
   button2State = digitalRead(colourPin2);
-  bri = LEDbrightness(briVal);
 
   if(button1State == HIGH && lastButton1State == LOW)
   {
@@ -72,6 +71,7 @@ void loop()
     delay(100);
   }
 
+  bri = LEDbrightness(briVal);
   LEDcolour(colour, bri);
   
   if (colour == 7)
