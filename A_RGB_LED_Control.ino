@@ -2,7 +2,8 @@
 The following code makes colours blend gradually in the sequence: 
 Green -> Yellow (Red+Green) -> Cyan (Green+Blue) -> Blue -> Magenta (Red+Blue) -> Red -> White (Red+Blue+Green)
 The colours blend, and the listed colours when formed, hold for 1 second and then start fading into the next one
-CIRCUIT - RGB pins connected to PWM output Arduino pins and common cathode (-) is connected to GND pin. If LED is common anode LED, connect common pin to +5V instead.*/
+CIRCUIT - RGB pins connected to PWM output Arduino pins and common cathode (-) is connected to GND pin. If LED is common anode LED, connect common pin to +5V instead.
+Common cathode RGB - HIGH=ON, LOW=OFF ; Common anode RGB - LOW=ON, HIGH=OFF. i for CC RGB gives same O/P as 255-i for CA RGB. */
 
 int redPin = 9, greenPin = 10, bluePin = 11;
 void setup()
