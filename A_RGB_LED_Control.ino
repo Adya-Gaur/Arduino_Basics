@@ -77,18 +77,3 @@ void loop()
   setColour(255, 0, 255);
   delay(1000); //White light for 1 second
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
