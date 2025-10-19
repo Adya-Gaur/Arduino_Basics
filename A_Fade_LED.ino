@@ -11,6 +11,10 @@
 int ledPin = 9; //PWM pin connected to LED. 
 void setup()
 {
+ pinMode(ledPin, OUTPUT);
+}
+void loop()
+{
   for(int brightness=1; brightness<=255; brightness++) //Loop for increasing brigntness
     {
       analogWrite(ledPin, brightness);
