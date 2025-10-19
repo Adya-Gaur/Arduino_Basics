@@ -19,14 +19,15 @@ This stage focuses on understanding how Arduino sends output signals through LED
 - `analogWrite()` – adjusting LED brightness through PWM  
 - Understanding PWM pins (marked with ~ on the board)  
 - RGB color control using three PWM pins  
-- Current limiting and safe LED connection using resistors  
+- Current limiting and safe LED connection using resistors
+- Blending of colours using loops with loop variable varying from 1 to 255
 
 ## 🧩 Projects in this Stage
 1. **LED_Patterns.ino** – Multiple LEDs blink in a sequential pattern. 
     [YouTube Demo](https://www.youtube.com)
 2. **Fade_LED.ino** – LED brightness gradually increases and decreases using PWM. 
     [YouTube Demo](https://www.youtube.com)
-3. **RGB_LED.ino** – Generate different colors by mixing red, green, and blue light levels. 
+3. **RGB_LED.ino** – Smoothly blending RGB mood light with soft fades and 1-second colour holds. 
     [YouTube Demo](https://www.youtube.com)
 
 ## 🔍 Observations / Notes
