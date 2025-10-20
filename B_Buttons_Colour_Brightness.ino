@@ -60,24 +60,24 @@ void loop()
 
   if(button1State == HIGH && lastButton1State == LOW)
   {
-    briVal = briVal++;
+    if(briVal != 3)
+      briVal = briVal++;
+    else
+      briVal = 0;
     lastButton1State = button1State;
     delay(100);
   }
   if (button2State == HIGH && lastButton2State == LOW)
   {
-    colour = colour++;
+    if (colour != 7)
+      colour = colour++;
+    else colour = 1;
     lastButton2state = button2State;
     delay(100);
   }
 
   bri = LEDbrightness(briVal);
   LEDcolour(colour, bri);
-  
-  if (colour == 7)
-    colour -= 7;
-  if (briVal == 3)
-    briVal -= 3;
 }
 
 
