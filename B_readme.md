@@ -20,12 +20,13 @@ The goal is to understand how digital inputs work, how to handle button presses 
 - Using pull-up and pull-down resistors to avoid floating inputs  
 - Basic logic conditions (`if`, `else`)  
 - State toggling with variables to remember previous input states  
-- Understanding and handling switch bounce (debouncing)  
+- Understanding and handling switch bounce (debouncing)
+- Handling multiple button input
 
 ## 🧩 Projects in this Stage
-1. **Button_Control_LED.ino** – Pressing a button turns the LED ON; releasing turns it OFF.   [YouTube Demo](https://www.youtube.com)
-2. **Toggle_LED_Button.ino** – Each button press toggles the LED state (ON/OFF).   [YouTube Demo](https://www.youtube.com)
-3. **Multiple_Buttons.ino** – Two buttons control separate LEDs or functions independently.   [YouTube Demo](https://www.youtube.com)
+1. **B_Button_Control_LED.ino** – Pressing a button turns the LED ON; releasing turns it OFF.   [YouTube Demo](https://www.youtube.com)
+2. **B_Toggle_LED_Button.ino** – Each button press toggles the LED state (ON/OFF).   [YouTube Demo](https://www.youtube.com)
+3. **B_Buttons_Colour_Brightness.ino** – An RGB LED that changes colour and brightness using two buttons - one for hues, one for glow.   [YouTube Demo](https://www.youtube.com)
 
 ## 🔍 Observations / Notes
 - Learned that input pins can float and give random readings without resistors.  
