@@ -89,4 +89,4 @@ void loop()
 }
 
 /*Honest Thoughts - Handling two independent inputs, two logical modes (colour and brightness), function stucturing and PWM-based output control - in short,
-designing a system that responds dynamically - it felt a little tough. But, the moment it worked, it felt magical &bso rewarding! */
+designing a system that responds dynamically - it felt a little tough. But, the moment it worked, it felt magical and so rewarding! */
