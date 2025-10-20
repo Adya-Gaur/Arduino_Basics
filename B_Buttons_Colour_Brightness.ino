@@ -1,11 +1,19 @@
 /*Two button input.
-The following code makes An RGB LED that changes colour and brightnes using two buttons - one for hues, and one for glow.*/
+This project controls an RGB LED using two push buttons - one to adjust brightness and the other to change colours. The program is structured with custom 
+functions for cleaner and modular code. A dedicated colourOutput() function handles the analog PWM outputs, while LEDcolour() is designed to select and 
+output one of the seven colours based on the current colour mode (colourVal). Similarly, LEDbrightness() maps brightness levels (0-3) to corresponding PWM
+values. 
+Inside the main loop, button inouts are read and used to update colour and brightness modes dynamically. The final output smoothly displays the selected
+colour at the chosen brightness level, demonstrating efficient use of functions, PWM, and button handling in Arduino.
 
+CIRCUIT - Connect Red, Green,and Blue leg to pin 9, 10 and 11 respectively through 220 ohm resistors. Cathode is connected to GND.
+  One leg of Button1 (for brightness control) - pin 3 and Button2 (for colour change) - pin 5; other leg - +5V. 10 kilo ohm resistor is connected
+  between the input pin and GND.*/
 
 int redPin = 9, greenPin = 10, bluePin = 11;
 int brightnessPin1 = 3, colourPin2 = 5;
 int lastButton2State = LOW, lastButton1State = LOW, button1State, buttonState2;
-int briVal = 0, colour = 1, bri;
+int briVal = 0, colourVal = 1, bri;
 
 void setup()
 {
@@ -23,21 +31,21 @@ void colourOutput(int redVal, int greenVal, int blueVal) //Custom function to av
   analogWrite(bluePin, blueVal);
 }
 
-void LEDcolour(int colourVal, int brightness) //Custom function for giving differnt colours as output
+void LEDcolour(int colour int brightness) //Custom function for giving differnt colours as output
 {
-  if (colourVal == 1)
+  if (colour == 1)
     colourOutput(0, brightness, 0); //Green in given level of brightness
-  else if (colourVal == 2)
+  else if (colour == 2)
     colourOutput(brightness, brightness, 0); //Yellow
-  else if (colourVal == 3)
+  else if (colour == 3)
     colourOutput(0, brightness, brightness); //Cyan
-  else if (colourVal == 4)
+  else if (colour == 4)
     colourOutput(0, 0, brightness); //Blue
-  else if (colourVal == 5)
+  else if (colour == 5)
     colourOutput(brightness, 0, brightness); //Magenta
-  else if (colourVal == 6)
+  else if (colour == 6)
     colourOutput(brightness, 0, 0); //Red
-  else if (colourVal == 7)
+  else if (colour == 7)
     colourOutput(brightness, brightness, brightness); //White 
 }
 
@@ -70,13 +78,15 @@ void loop()
   }
   if (button2State == HIGH && lastButton2State == LOW) //If button 2 pressed -> colour changes
   {
-    if (colour != 7)
-      colour = colour++;
-    else colour = 1; //Reset. 1 -> 2-> 3 -> 4 -> 5 -> 6 -> 7 -> 1 ....
+    if (colourVal != 7)
+      colourVal = colourVal++;
+    else colourVal = 1; //Reset. 1 -> 2-> 3 -> 4 -> 5 -> 6 -> 7 -> 1 ....
     lastButton2state = button2State;
     delay(100);
   }
-
   bri = LEDbrightness(briVal);
-  LEDcolour(colour, bri); //Gives output
+  LEDcolour(colourVal, bri); //Gives output
 }
+
+/*Honest Thoughts - Handling two independent inputs, two logical modes (colour and brightness), function stucturing and PWM-based output control - in short,
+designing a system that responds dynamically - it felt a little tough. But, the moment it worked, it felt magical &bso rewarding! */
