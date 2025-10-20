@@ -1,4 +1,5 @@
-/*Two button input. Button 1 controls the intensity i.e. 3 levels of brightness and one off state, whereas, Button 2 is for changing colours */
+/*Two button input.
+The following code makes An RGB LED that changes colour and brightnes using two buttons - one for hues, and one for glow.*/
 
 
 int redPin = 9, greenPin = 10, bluePin = 11;
@@ -22,7 +23,7 @@ void colourOutput(int redVal, int greenVal, int blueVal) //Custom function to av
   analogWrite(bluePin, blueVal);
 }
 
-void LEDcolour(int colourVal, int brightness) //Custom function for making differnt colours
+void LEDcolour(int colourVal, int brightness) //Custom function for giving differnt colours as output
 {
   if (colourVal == 1)
     colourOutput(0, brightness, 0); //Green in given level of brightness
@@ -40,7 +41,7 @@ void LEDcolour(int colourVal, int brightness) //Custom function for making diffe
     colourOutput(brightness, brightness, brightness); //White 
 }
 
-void LEDbrightess(int brightnessVal)
+void LEDbrightess(int brightnessVal) //Function that returns PWM value based on selected brightness modey
 {
   if (brightnessVal == 1)
     bri = 85;
@@ -58,33 +59,24 @@ void loop()
   button1State = digitalRead(brightnessPin1);
   button2State = digitalRead(colourPin2);
 
-  if(button1State == HIGH && lastButton1State == LOW)
+  if(button1State == HIGH && lastButton1State == LOW) //If button 1 pressed -> brightness level changes
   {
-    if(briVal != 3)
+    if (briVal != 3)
       briVal = briVal++;
     else
-      briVal = 0;
+      briVal = 0; //Reset. 1-> 2-> 3 -> 0 -> 1 ....
     lastButton1State = button1State;
     delay(100);
   }
-  if (button2State == HIGH && lastButton2State == LOW)
+  if (button2State == HIGH && lastButton2State == LOW) //If button 2 pressed -> colour changes
   {
     if (colour != 7)
       colour = colour++;
-    else colour = 1;
+    else colour = 1; //Reset. 1 -> 2-> 3 -> 4 -> 5 -> 6 -> 7 -> 1 ....
     lastButton2state = button2State;
     delay(100);
   }
 
   bri = LEDbrightness(briVal);
-  LEDcolour(colour, bri);
+  LEDcolour(colour, bri); //Gives output
 }
-
-
-
-
-
-
-
-
-
