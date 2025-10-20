@@ -45,7 +45,7 @@ My approach was **sequential learning** — mastering each concept individually 
 ---
 
 ## 🎥 Demos
-I have documented each project with **YouTube video demonstrations** to visually showcase functionality and progress. 
+I have documented each project with **YouTube video demonstrations** to visually showcase functionality and progress. The Demos are linked in readme files of each stage.
 
 ---
 
