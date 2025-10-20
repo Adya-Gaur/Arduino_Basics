@@ -73,7 +73,6 @@ void loop()
       briVal = briVal++;
     else
       briVal = 0; //Reset. 1-> 2-> 3 -> 0 -> 1 ....
-    lastButton1State = button1State;
     delay(100);
   }
   if (button2State == HIGH && lastButton2State == LOW) //If button 2 pressed -> colour changes
@@ -81,9 +80,11 @@ void loop()
     if (colourVal != 7)
       colourVal = colourVal++;
     else colourVal = 1; //Reset. 1 -> 2-> 3 -> 4 -> 5 -> 6 -> 7 -> 1 ....
-    lastButton2state = button2State;
     delay(100);
   }
+
+  lastButton1State = button1State;
+  lastButton2state = button2State;
   bri = LEDbrightness(briVal);
   LEDcolour(colourVal, bri); //Gives output
 }
