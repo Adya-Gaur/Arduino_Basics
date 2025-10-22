@@ -9,15 +9,15 @@ int redPin = 9, greenPin = 10, bluePin = 11;
 void setup()
 {
   pinMode(redPin, OUTPUT);
-  pinMode(redPin, OUTPUT);
-  pinMode(redPin, OUTPUT);
+  pinMode(greenPin, OUTPUT);
+  pinMode(bluePin, OUTPUT);
 }
 
 void setColour(int redVal, int greenVal, int blueVal) //Defining a function so that we don't have to write 3 analogWrite() statements again and again
 {
   analogWrite(redPin, redVal);
-  analogWrite(redPin, redVal);
-  analogWrite(redPin, redVal);
+  analogWrite(greenPin, redVal);
+  analogWrite(bluePin, redVal);
 }
 
 void loop()
