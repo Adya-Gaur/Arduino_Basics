@@ -18,11 +18,11 @@ void loop()
   for(int brightness=1; brightness<=255; brightness++) //Loop for increasing brigntness
     {
       analogWrite(ledPin, brightness);
-      delay(10); //Each level of brightness remains for 10ms - smooth fade in
+      delay(50); //Each level of brightness remains for 50ms - smooth fade in
     }
   for(int brightness=255; brightness>=0; brightness--)
     {
       analogWrite(ledPin, brightness);
-      delay(10); //Smooth fade out
+      delay(50); //Smooth fade out
     }
 }
