@@ -16,8 +16,8 @@ void setup()
 void setColour(int redVal, int greenVal, int blueVal) //Defining a function so that we don't have to write 3 analogWrite() statements again and again
 {
   analogWrite(redPin, redVal);
-  analogWrite(greenPin, redVal);
-  analogWrite(bluePin, redVal);
+  analogWrite(greenPin, greenVal);
+  analogWrite(bluePin, blueVal);
 }
 
 void loop()
@@ -75,6 +75,6 @@ void loop()
       setColour(255, i, i); //Fading from Red to White(Red+Green+Blue)
       delay(10);
     }
-  setColour(255, 0, 255);
+  setColour(255, 255, 255);
   delay(1000); //White light for 1 second
 }
