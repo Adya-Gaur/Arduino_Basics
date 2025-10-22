@@ -25,11 +25,11 @@ This stage focuses on understanding how Arduino sends output signals through LED
 
 ## 🧩 Projects in this Stage
 1. **A_LED_Patterns.ino** – Multiple LEDs blink in a sequential pattern, creating a chase effect. 
-    [YouTube Demo](https://www.youtube.com)
+    [YouTube Demo](https://youtu.be/jrsQdK30p0s)
 2. **A_Fade_LED.ino** – LED brightness gradually increases and decreases using PWM. 
-    [YouTube Demo](https://www.youtube.com)
+    [YouTube Demo](https://youtu.be/VIEYhdRMl-k)
 3. **A_RGB_LED_Control.ino** – Smoothly blending RGB mood light with soft fades and 1-second colour holds. 
-    [YouTube Demo](https://www.youtube.com)
+    [YouTube Demo](https://youtu.be/qs2Qq_HN19k)
 
 ## 🔍 Observations / Notes
 - Learned how varying the delay changes blink speed.  
