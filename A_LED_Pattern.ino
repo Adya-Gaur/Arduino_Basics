@@ -8,7 +8,7 @@ int numLED = 10;
 void setup()
 {
   for(int i=1; i<=10; i++)
-    pinMode(ledPins[i], OUTPUT)
+    pinMode(ledPins[i], OUTPUT);
 }
 
 void loop()
