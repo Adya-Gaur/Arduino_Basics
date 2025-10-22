@@ -19,7 +19,7 @@ void loop()
       delay(200);
       digitalWrite(ledPins[i], LOW);
     }
-  for(int i=9; i>=3; i--) //Reverse sequence. This loop controls only LEDs connected to pin 10-3 so that terminal LED connected to pin 2&11 don't blink twice during direction change
+  for(int i=10; i>=3; i--) //Reverse sequence. This loop controls only LEDs connected to pin 10-3 so that terminal LED connected to pin 2&11 don't blink twice during direction change
     {
       digitalWrite(ledPins[i], HIGH);
       delay(200);
