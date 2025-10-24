@@ -49,7 +49,7 @@ void LEDcolour(int colour, int brightness) //Custom function for giving differnt
     colourOutput(brightness, brightness, brightness); //White 
 }
 
-void LEDbrightness(int brightnessVal) //Function that returns PWM value based on selected brightness modey
+int LEDbrightness(int brightnessVal) //Function that returns PWM value based on selected brightness modey
 {
   if (brightnessVal == 1)
     bri = 85;
@@ -70,7 +70,7 @@ void loop()
   if(button1State == HIGH && lastButton1State == LOW) //If button 1 pressed -> brightness level changes
   {
     if (briVal != 3)
-      briVal = briVal++;
+      briVal++;
     else
       briVal = 0; //Reset. 1-> 2-> 3 -> 0 -> 1 ....
     delay(100);
@@ -78,7 +78,7 @@ void loop()
   if (button2State == HIGH && lastButton2State == LOW) //If button 2 pressed -> colour changes
   {
     if (colourVal != 7)
-      colourVal = colourVal++;
+      colourVal++;
     else colourVal = 1; //Reset. 1 -> 2-> 3 -> 4 -> 5 -> 6 -> 7 -> 1 ....
     delay(100);
   }
