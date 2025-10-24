@@ -12,7 +12,7 @@ CIRCUIT - Connect Red, Green,and Blue leg to pin 9, 10 and 11 respectively throu
 
 int redPin = 9, greenPin = 10, bluePin = 11;
 int brightnessPin1 = 3, colourPin2 = 5;
-int lastButton2State = LOW, lastButton1State = LOW, button1State, buttonState2;
+int lastButton2State = LOW, lastButton1State = LOW, button1State, button2State;
 int briVal = 0, colourVal = 1, bri;
 
 void setup()
@@ -31,7 +31,7 @@ void colourOutput(int redVal, int greenVal, int blueVal) //Custom function to av
   analogWrite(bluePin, blueVal);
 }
 
-void LEDcolour(int colour int brightness) //Custom function for giving differnt colours as output
+void LEDcolour(int colour, int brightness) //Custom function for giving differnt colours as output
 {
   if (colour == 1)
     colourOutput(0, brightness, 0); //Green in given level of brightness
@@ -49,7 +49,7 @@ void LEDcolour(int colour int brightness) //Custom function for giving differnt 
     colourOutput(brightness, brightness, brightness); //White 
 }
 
-void LEDbrightess(int brightnessVal) //Function that returns PWM value based on selected brightness modey
+void LEDbrightness(int brightnessVal) //Function that returns PWM value based on selected brightness modey
 {
   if (brightnessVal == 1)
     bri = 85;
@@ -84,7 +84,7 @@ void loop()
   }
 
   lastButton1State = button1State;
-  lastButton2state = button2State;
+  lastButton2State = button2State;
   bri = LEDbrightness(briVal);
   LEDcolour(colourVal, bri); //Gives output
 }
