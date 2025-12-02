@@ -4,9 +4,7 @@ If it's dark -> LED turns ON & if it's dark bright -> turn LED OFF
 CIRCUIT - One leg of LDR -> 5V, other leg of LDR -> A0 and 10 kilo ohm resistor. The other end of the 10 kilo ohm -> GND. LED(+) -> pin 9 via 220 ohm resistor. LED(-) -> GND*/
 
 #include <LiquidCrystal.h>
-
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
-
 int ldrPin = A0, ldrValue = 0;
 
 void setup() 
