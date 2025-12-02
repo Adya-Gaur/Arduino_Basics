@@ -11,10 +11,12 @@ The goal is to understand how digital inputs work, how to handle button presses 
 - LEDs (for visual feedback)  
 - Breadboard  
 - Jumper wires  
-- Arduino IDE  
+- Arduino IDE
+- LCD
+- Potentiometer
 
 ## 📚 Concepts & Learnings
-- `pinMode(pin, INPUT)` and `pinMode(pin, INPUT_PULLUP)`  
+- `pinMode(pin, INPUT)`, `pinMode(pin, INPUT_PULLUP)`, `map()` and lcd functions
 - `digitalRead()` – reading HIGH or LOW states from buttons  
 - Difference between **input** and **output** modes  
 - Using pull-up and pull-down resistors to avoid floating inputs  
@@ -27,6 +29,8 @@ The goal is to understand how digital inputs work, how to handle button presses 
 1. **B_Button_Control_LED.ino** – Pressing a button turns the LED ON; releasing turns it OFF.   [YouTube Demo](https://www.youtube.com)
 2. **B_Toggle_LED_Button.ino** – Each button press toggles the LED state (ON/OFF).   [YouTube Demo](https://www.youtube.com)
 3. **B_Buttons_Colour_Brightness.ino** – An RGB LED that changes colour and brightness using two buttons - one for hues, one for glow.   [YouTube Demo](https://www.youtube.com)
+4. **B_Potentiometer_LED.ino** - LED brightness varies smoothly based on the potentiometer’s analog input.  [YouTube Demo](https://www.youtube.com)
+5. **B_LCD_Communication.ino** - Displayed a custom message on a 16x2 LCD using Arduino to demonstrate basic text output control.   [YouTube Demo](https://www.youtube.com) 
 
 ## 🔍 Observations / Notes
 - Learned that input pins can float and give random readings without resistors.  
