@@ -7,7 +7,8 @@
    lcd.blink();               // blinking cursor
    lcd.noBlink();             // stop blinking  
    
-   CIRCCUIT - */
+   CIRCCUIT - VSS → GND, VDD → 5V, VO → middle pin of potentiometer, Pot side 1 → 5V, Pot side 2 → GND,  RS → pin 12, RW → GND, E → pin 11,  
+              D4 → pin 5, D5 → pin 4, D6 → pin 3, D7 → pin 2,  Pin 15 → 5V, Pin 16 → GND   */
 
 #include <LiquidCrystal.h>
 
@@ -20,6 +21,7 @@ void setup()
   lcd.begin(16, 2);
   lcd.createChar(1, heart); // store in slot 1
   lcd.createChar(0, smiley);  // store in slot 0
+  lcd.setCursor(0,0);
   lcd.print("Hello, friend!");
   lcd.setCursor(0, 1);
   lcd.print("LCD Working");
