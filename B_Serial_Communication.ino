@@ -10,11 +10,11 @@
    CIRCCUIT - VSS → GND, VDD → 5V, VO → middle pin of potentiometer, Pot side 1 → 5V, Pot side 2 → GND,  RS → pin 12, RW → GND, E → pin 11,  
               D4 → pin 5, D5 → pin 4, D6 → pin 3, D7 → pin 2,  Pin 15 → 5V, Pin 16 → GND   */
 
-#include <LiquidCrystal.h>
+#include <LiquidCrystal.h> // Importing library 
 
 LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
-byte smiley[8] = {0b00000, 0b01010, 0b01010, 0b00000, 0b10001, 0b01110, 0b00000, 0b00000};
-byte heart[8] = {0b00000, 0b01010, 0b11111, 0b11111, 0b11111, 0b01110, 0b00100, 0b00000};
+byte smiley[8] = {0b00000, 0b01010, 0b01010, 0b00000, 0b10001, 0b01110, 0b00000, 0b00000}; //0b implies binary, we're writing them as binary because that makes char formation visible
+byte heart[8] = {0b00000, 0b01010, 0b11111, 0b11111, 0b11111, 0b01110, 0b00100, 0b00000}; // Funtions line lcd.createChar() expect array of byte datatype not int
 
 void setup() 
 {
