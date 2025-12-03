@@ -26,5 +26,5 @@ void loop()
   else
     lcd.print("No vibration     ");
 
-  delay(50);
-}
+  delay(50); // Debouncing 
+} 
