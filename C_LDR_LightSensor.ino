@@ -20,7 +20,7 @@ void loop()
   ldrValue = analogRead(ldrPin);
   lcd.setCursor(0, 0);
   lcd.print("Light: ");
-  lcd.print(ldrValue);
+  lcd.print(ldrValue); // Reads a value between 0 and 1023
   lcd.print("   ");   // clears extra digits
 
   lcd.setCursor(0, 1);
