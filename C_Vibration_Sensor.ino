@@ -3,7 +3,7 @@ the pin → circuit closes, when still → spring stays away → circuit open. S
 CIRCUIT - One leg - 5V, other leg - Pin 8, 10 Kohm resistor -> GND*/
 
 #include <LiquidCrystal.h>
-LiquidCrystal lcd(11, 12, 5, 4, 3, 2);
+LiquidCrystal lcd(12, 11, 5, 4, 3, 2);
 int vibrationPin = 8, vibrationState = 0;
 
 void setup() 
