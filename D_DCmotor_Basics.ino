@@ -24,7 +24,7 @@ void loop()
 
   digitalWrite(IN1, HIGH); //Forward -> Slowly to full speed
   digitalWrite(IN2, LOW);
-  for(int i=0, i<=255, i++)
+  for(int i=0; i<=255; i++)
   {
     analogWrite(ENA, i);
     delay(50);
@@ -32,7 +32,7 @@ void loop()
   analogWrite(ENA,255);
   delay(2000);
 
-  for(int i=255, i>=0, i--) //Slowly stopping
+  for(int i=255; i>=0; i--) //Slowly stopping
   {
     analogWrite(ENA, i);
     delay(50);
@@ -44,4 +44,5 @@ void loop()
   delay(3000);
   digitalWrite(IN1, HIGH); //Short Break
   digitalWrite(IN2, HIGH);
+  delay(1000);
 }
