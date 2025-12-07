@@ -26,11 +26,11 @@ The goal is to understand how digital inputs work, how to handle button presses 
 - Handling multiple button input
 
 ## 🧩 Projects in this Stage
-1. **B_Button_Control_LED.ino** – Pressing a button turns the LED ON; releasing turns it OFF.   [YouTube Demo](https://www.youtube.com)
-2. **B_Toggle_LED_Button.ino** – Each button press toggles the LED state (ON/OFF).   [YouTube Demo](https://www.youtube.com)
-3. **B_Buttons_Colour_Brightness.ino** – An RGB LED that changes colour and brightness using two buttons - one for hues, one for glow.   [YouTube Demo](https://www.youtube.com)
-4. **B_Potentiometer_LED.ino** - LED brightness varies smoothly based on the potentiometer’s analog input.  [YouTube Demo](https://www.youtube.com)
-5. **B_LCD_Communication.ino** - Displayed a custom message on a 16x2 LCD using Arduino to demonstrate basic text output control.   [YouTube Demo](https://www.youtube.com) 
+1. **B_Button_Control_LED.ino** – Pressing a button turns the LED ON; releasing turns it OFF.   [YouTube Demo](https://youtu.be/JZLsifPsgvU)
+2. **B_Toggle_LED_Button.ino** – Each button press toggles the LED state (ON/OFF).   [YouTube Demo](https://youtu.be/Kv1VhvgHGYE)
+3. **B_Buttons_Colour_Brightness.ino** – An RGB LED that changes colour and brightness using two buttons - one for hues, one for glow.   [YouTube Demo](https://youtu.be/LsbMf98PrgU)
+4. **B_Potentiometer_LED.ino** - LED brightness varies smoothly based on the potentiometer’s analog input.  [YouTube Demo](https://youtu.be/us3RsIlnvAU)
+5. **B_LCD_Communication.ino** - Displayed a custom message on a 16x2 LCD using Arduino to demonstrate basic text output control.   [YouTube Demo](https://youtu.be/Lh4NwevadSU) 
 
 ## 🔍 Observations / Notes
 - Learned that input pins can float and give random readings without resistors.  
