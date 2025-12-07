@@ -17,8 +17,8 @@ You’ll learn how analog and digital sensors work, how to read their data, and 
 - Understanding **analog vs digital** sensors  
 - Using `analogRead()` and `digitalRead()`  
 - Mapping sensor values to real-world units using `map()`  
-- Using **Serial Monitor** for debugging and viewing sensor output  
-- Writing threshold-based conditions (like “if distance < 10cm → stop motor”)  
+- Using **Serial Monitor** and **LCD** for debugging and viewing sensor output  
+- Writing threshold-based conditions 
 - Basics of sensor calibration and noise handling  
 - Using simple mathematical conversions (e.g., voltage to temperature)  
 
