@@ -2,7 +2,7 @@
 
 ## 🧠 Overview
 In this stage, I learned how to make Arduino **control motion** using motors — the foundation for robotics.  
-This stage focuses on DC motors, servo motors, and motor drivers, learning how to control direction, speed, and angle through code and hardware connections.
+This stage focuses on DC motors, servo motors, stepper motors and motor drivers, learning how to control direction, speed, and angle through code and hardware connections.
 
 ## ⚙️ Tools & Components Used
 - Arduino Uno  
@@ -11,22 +11,25 @@ This stage focuses on DC motors, servo motors, and motor drivers, learning how t
 - Servo motor  
 - External power supply (for motors)  
 - Jumper wires and breadboard  
-- Arduino IDE  
+- Arduino IDE
+- Stepper Motor
+- ULN2003 Driver
 
 ## 📚 Concepts & Learnings
-- Difference between **DC motors** and **servo motors**  
+- Difference between **DC motors**, **servo motors**  and **stepper motors**
 - Using **motor driver ICs** to safely power and control motors  
 - Understanding **PWM (Pulse Width Modulation)** and its role in controlling speed  
 - Using the `analogWrite()` function to vary speed  
 - Controlling servo position with the `Servo` library  
 - Understanding power management for motors (current requirements, separate supply, common ground)  
-- Basics of motor direction control (clockwise & anticlockwise rotation)  
+- Basics of motor direction control (clockwise & anticlockwise rotation)
+- Hard Braking
 
 ## 🧩 Projects in this Stage
-1. **DC_Motor_Control.ino** – Control a single DC motor using digital pins for direction.  [YouTube Demo](https://www.youtube.com) 
-2. **PWM_SpeedControl.ino** – Use PWM to vary DC motor speed smoothly.   [YouTube Demo](https://www.youtube.com)
+1. **D_DCmotor_Basics.ino** – Control a single DC motor using digital pins for direction and speed.  [YouTube Demo](https://www.youtube.com) 
+2. **D_DC_Button+Potentiometer.ino** – Toggle direction of spin with button and control speed with potentiometer.   [YouTube Demo](https://www.youtube.com)
 3. **Servo_Control.ino** – Rotate a servo motor to specific angles using the Servo library.   [YouTube Demo](https://www.youtube.com)
-4. **Dual_Motor_Test.ino** – Test two motors using L293D for bidirectional control.   [YouTube Demo](https://www.youtube.com)
+4. **StepperMotor.ino** – Use ULN2003 driver to control stepper motor.   [YouTube Demo](https://www.youtube.com)
 
 ## 🔍 Observations / Notes
 - Learned that motors need more current than Arduino pins can provide directly.  
