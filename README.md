@@ -32,15 +32,9 @@ My approach was **sequential learning** — mastering each concept individually 
 
 ### **Stage E: Mini Projects Integration 🤖🧩**
 - Combined sensors, motors, LEDs, and buttons into functional systems.  
-- Practiced modular programming, multi-component debugging, and sequencing logic.  
+- Practiced modular programming, multi-component debugging, and sequencing logic.
+- Buzzer melodies (tone function)  
 - Mini projects: Auto Light System, Smart Park Sensor, Button-Controlled Car, Optional Fire Alarm System.
-
-### **Stage F: Miscellaneous Projects 🔧**
-- Explored additional concepts for further learning and practice:  
-  - Buzzer melodies (tone function)  
-  - Data display on Serial Monitor  
-  - Temperature display and monitoring  
-- These projects provided hands-on experience with diverse Arduino features and reinforced core concepts.
 
 ---
 
