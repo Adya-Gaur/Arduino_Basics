@@ -2,6 +2,8 @@
   CIRCUIT - Buzzer anode -> Pin 9, Buzzer cathode -> GND*/
 
 int buzzer = 9;
+int melody[] = {523, 659, 784, 784, 659, 523, 659, 784, 988}; //C5 E5 G5 G5 E5 C5 E5 G5 B5
+int noteDurations[] = {200, 200, 300, 200, 200, 300, 200, 200, 400};
 void setup() 
 {
   tone(buzzer, 523);   // C5
@@ -16,8 +18,16 @@ void setup()
   delay(300);
   noTone(buzzer);
 
-  void errorTone();
-  void successTone();
+  for (int i = 0; i < 9; i++) 
+  {
+    tone(buzzer, melody[i]);
+    delay(noteDurations[i]);
+    noTone(buzzer);
+    delay(50); // pause between notes
+  }
+
+  errorTone();
+  successTone();
 }
 
 void successTone() 
