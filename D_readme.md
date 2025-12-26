@@ -26,9 +26,9 @@ This stage focuses on DC motors, servo motors, stepper motors and motor drivers,
 - Hard Braking
 
 ## 🧩 Projects in this Stage
-1. **D_DCmotor_Basics.ino** – Control a single DC motor using digital pins for direction and speed.  [YouTube Demo](https://www.youtube.com) 
-2. **D_DC_Button+Potentiometer.ino** – Toggle direction of spin with button and control speed with potentiometer.   [YouTube Demo](https://www.youtube.com)
-3. **Servo_Control.ino** – Rotate a servo motor to specific angles using the Servo library.   [YouTube Demo](https://www.youtube.com)
+1. **D_DCmotor_Basics.ino** – Control a single DC motor using digital pins for direction and speed.  [YouTube Demo](https://youtu.be/IfUt1lVHovk) 
+2. **D_DC_Button+Potentiometer.ino** – Toggle direction of spin with button and control speed with potentiometer.   [YouTube Demo](https://youtu.be/NecM6p0vJaU)
+3. **Servo_Control.ino** – Rotate a servo motor to specific angles using the Servo library.   [YouTube Demo](https://youtu.be/j52C7oXo1TI)
 4. **StepperMotor.ino** – Use ULN2003 driver to control stepper motor.   [YouTube Demo](https://www.youtube.com)
 
 ## 🔍 Observations / Notes
