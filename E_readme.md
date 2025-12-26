@@ -23,10 +23,10 @@ The goal is to apply everything learned in previous stages to make Arduino respo
 - Using Serial Monitor to observe combined system behavior  
 
 ## 🧩 Projects in this Stage
-1. **Auto_Light_System.ino** – LDR sensor controls LED based on ambient light.   [YouTube Demo](https://www.youtube.com)
-2. **Smart_Park_Sensor.ino** – Ultrasonic sensor triggers LED/Buzzer when an object is nearby.   [YouTube Demo](https://www.youtube.com)
+1. **Auto_Light_System.ino** – LDR sensor controls LED based on ambient light.   [YouTube Demo](https://youtu.be/i0uANCEKL9E)
+2. **Smart_Park_Sensor.ino** – Ultrasonic sensor triggers LED/Buzzer when an object is nearby.   [YouTube Demo](https://youtu.be/ZOEEM-Dtyig)
 3. **Button_Controlled_Car.ino** – Buttons control forward, backward, and turning of a motor-driven car.   [YouTube Demo](https://www.youtube.com)
-4. **Buzzer_Melody.ino** – Different tunes usig buzzer.   [YouTube Demo](https://www.youtube.com)
+4. **Buzzer_Melody.ino** – Different tunes usig buzzer.   [YouTube Demo](https://youtu.be/Wvv2x7QWDfY)
 
 ## 🔍 Observations / Notes
 - Learned how inputs from different sensors can be combined to control outputs effectively.  
