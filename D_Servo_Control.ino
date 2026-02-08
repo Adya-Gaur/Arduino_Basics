@@ -36,7 +36,7 @@ void loop()
     delay(10);
   }
 
-  randomSeed(analogRead(A0)); //Optional - makes random() more random
+  randomSeed(analogRead(A0)); //Optional - makes random() more random. Leave A0 unconnected for noise. Without this function Arduino gives same random sequence on every reset
   int angle = random(0,181); // Random number between 0 and 180
   myservo.write(angle);
   delay(2000);
